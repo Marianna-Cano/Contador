@@ -121,7 +121,7 @@
 
     <script>
         // Fecha objetivo (14 de mayo de 2026 00:00:00)
-        const fechaObjetivo = new Date('May 30, 2026 22:00:00').getTime();
+        const fechaObjetivo = new Date('May 29, 2026 22:00:00').getTime();
 
         const x = setInterval(function() {
             const ahora = new Date().getTime();
@@ -140,7 +140,7 @@
             document.getElementById("segundos").innerHTML = s;
 
             // Cuando llega a cero
-            if (distancia < 12) {
+            if (distancia < 1) {
                 clearInterval(x);
                 // Reemplazamos todo por el mensaje final
                 document.querySelector(".main-wrapper").innerHTML = `
